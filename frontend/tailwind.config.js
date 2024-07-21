@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "landing-page-img": "url('/img/background.png')",
+      },
+    },
   },
-  plugins: [],
+  plugins: [import("@tailwindcss/forms")],
 };
